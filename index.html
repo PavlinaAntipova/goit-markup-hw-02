@@ -5,30 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      >
   </head>
   <body>
-    <header>
-      <a href="/"><span>Web</span>Studio</a>
-      <nav>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+    <header class="header">
+      <a href="./index.html"><span class="logo">Web</span>Studio</a>
+      <nav class="nav-box">
+        <ul class="nav-links">
+          <li><a class="link" href="./index.html">Студия</a></li>
+          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts">
+        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
-    <main>
+
+    <main class="main-section">
       <!-- Герой -->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
+      <section class="hero-section">
+        <div class="container">
+        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button">Заказать услугу</button>
+        </div>
       </section>
       <!-- Особенности -->
-      <section>
+      <section class="features-section">
+        <div class="container">
         <ul>
           <li>
             <h3>Внимание к деталям</h3>
@@ -51,9 +59,11 @@
             <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
+        </div>
       </section>
       <!-- Чем занимаемся -->
-      <section>
+      <section class="work-section">
+        <div class="container">
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li>
@@ -81,9 +91,11 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!-- Команда -->
-      <section>
+      <section class="team-section">
+        <div class="container">
         <h2>Наша команда</h2>
         <ul>
           <li>
@@ -127,16 +139,19 @@
             <p>UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <a href="/"><span>Web</span>Studio</a>
-      <address>
+    <footer class="footer">
+      <a class="link" href="./index.html"><span class="logo">Web</span>Studio</a>
+      <address class="adress">
         <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li></address>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+          <li>г. Киев, пр-т Леси Украинки, 26</li>
+    
+          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </address>
     </footer>
   </body>
 </html>
