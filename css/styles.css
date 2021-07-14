@@ -1,10 +1,11 @@
 :root {
   --accent-color: #2196f3;
-  --primery-bgr-color: #2f303a;
-  --main-text-color: #757575;
-  --title-color: #212121;
   --second-accent-color: #ffffff;
+  --primery-bgr-color: #2f303a;
   --secondary-bgr-color: #f5f4fa;
+  --title-color: #212121;
+  --main-text-color: #757575;
+  --adress-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -37,11 +38,29 @@ body {
   color: var(--accent-color);
 }
 
+.contacts .link {
+  color: inherit;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
 /* Projects */
 .filter-buttom {
   font-family: inherit;
-  background-color: var(--accent-color);
+  color: var(--title-color);
   cursor: pointer;
+}
+
+.filter-buttom:hover {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  color: var(--title-color);
 }
 
 /* Footer */
@@ -51,4 +70,12 @@ body {
 
 .footer-link {
   color: var(--second-accent-color);
+}
+
+.adress {
+  color: var(--second-accent-color);
+}
+
+.adress-link {
+  color: var(--adress-color);
 }
