@@ -2,16 +2,14 @@
   --accent-color: #2196f3;
   --second-accent-color: #ffffff;
   --primery-bgr-color: #2f303a;
-  --secondary-bgr-color: #f5f4fa;
   --title-color: #212121;
-  --main-text-color: #757575;
-  --adress-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
-  color: var(--main-text-color);
+  color: #757575;
   letter-spacing: 0.03em;
+  background-color: #ffffff;
 }
 
 /* Global style */
@@ -27,17 +25,24 @@ body {
 .button {
   font-family: inherit;
   cursor: pointer;
+  text-align: center;
 }
 
 .title {
   color: var(--title-color);
 }
-
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+}
 /* Common style */
 
 /* Logo */
 .logo-link {
   color: #000000;
+  font-family: 'Raleway';
 }
 
 .logo {
@@ -47,6 +52,9 @@ body {
 /* Site nav */
 .site-nav .link {
   color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -67,9 +75,11 @@ body {
 /* Footer */
 .footer {
   background-color: var(--primery-bgr-color);
+  font-size: 14px;
+  line-height: 1.71em;
 }
 
-.footer-link {
+.lighten {
   color: var(--second-accent-color);
 }
 
@@ -79,7 +89,7 @@ body {
 }
 
 .adress-link {
-  color: var(--adress-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* index.html */
@@ -102,15 +112,27 @@ body {
 .button-order {
   color: var(--second-accent-color);
   background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88em;
 }
 
 /* Features section */
 .features-list .title {
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+}
+
+.features-list p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71em;
 }
 /* Team section */
 .team-section {
-  background-color: var(--secondary-bgr-color);
+  background-color: #f5f4fa;
 }
 
 /* portfolio.html */
@@ -118,6 +140,9 @@ body {
 /* Projects */
 .filter-button {
   color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63em;
 }
 
 .filter-button:hover {
@@ -127,4 +152,15 @@ body {
 
 .project-title {
   color: var(--title-color);
+}
+.projects-list h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+}
+
+.projects-list p {
+  font-size: 16px;
+  line-height: 1.88em;
 }
