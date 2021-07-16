@@ -11,15 +11,30 @@
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--main-text-color);
+  letter-spacing: 0.03em;
 }
 
+/* Global style */
 .link {
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .lists {
   list-style: none;
 }
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--title-color);
+}
+
+/* Common style */
+
 /* Logo */
 .logo-link {
   color: #000000;
@@ -37,7 +52,9 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
+.site-nav .link-current {
+  color: var(--accent-color);
+}
 .contacts .link {
   color: inherit;
 }
@@ -45,22 +62,6 @@ body {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
-}
-
-/* Projects */
-.filter-buttom {
-  font-family: inherit;
-  color: var(--title-color);
-  cursor: pointer;
-}
-
-.filter-buttom:hover {
-  color: var(--second-accent-color);
-  background-color: var(--accent-color);
-}
-
-.project-title {
-  color: var(--title-color);
 }
 
 /* Footer */
@@ -74,8 +75,56 @@ body {
 
 .adress {
   color: var(--second-accent-color);
+  font-style: normal;
 }
 
 .adress-link {
   color: var(--adress-color);
+}
+
+/* index.html */
+
+/* Hero section */
+.hero-section {
+  background-color: var(--primery-bgr-color);
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  color: var(--second-accent-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-order {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
+
+/* Features section */
+.features-list .title {
+  text-transform: uppercase;
+}
+/* Team section */
+.team-section {
+  background-color: var(--secondary-bgr-color);
+}
+
+/* portfolio.html */
+
+/* Projects */
+.filter-button {
+  color: var(--title-color);
+}
+
+.filter-button:hover {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  color: var(--title-color);
 }
