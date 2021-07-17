@@ -26,6 +26,7 @@ body {
   font-family: inherit;
   cursor: pointer;
   text-align: center;
+  border: none;
 }
 
 .title {
@@ -36,6 +37,7 @@ body {
   font-size: 36px;
   line-height: 1.17em;
   text-align: center;
+  color: var(--title-color);
 }
 /* Common style */
 
@@ -43,6 +45,9 @@ body {
 .logo-link {
   color: #000000;
   font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19em;
 }
 
 .logo {
@@ -57,7 +62,9 @@ body {
   line-height: 1.14em;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.adress-link:hover,
+.adress-link:focus {
   color: var(--accent-color);
 }
 .site-nav .link-current {
@@ -126,7 +133,6 @@ body {
 }
 
 .features-list p {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71em;
 }
