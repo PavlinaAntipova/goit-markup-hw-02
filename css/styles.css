@@ -6,10 +6,11 @@
 }
 
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #757575;
   letter-spacing: 0.03em;
   background-color: #ffffff;
+  font-size: 14px;
 }
 
 /* Global style */
@@ -18,7 +19,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.lists {
+.list {
   list-style: none;
 }
 
@@ -48,6 +49,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19em;
+  letter-spacing: 0.02em;
 }
 
 .logo {
@@ -55,27 +57,28 @@ body {
 }
 
 /* Site nav */
-.site-nav .link {
+.navigation-link {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
+  letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
+.navigation-link:hover,
+.navigation-link:focus,
 .adress-link:hover,
 .adress-link:focus {
   color: var(--accent-color);
 }
-.site-nav .link-current {
+.current {
   color: var(--accent-color);
 }
-.contacts .link {
+.contacts-link {
   color: inherit;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -97,6 +100,7 @@ body {
 
 .adress-link {
   color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.02em;
 }
 
 /* index.html */
@@ -125,20 +129,22 @@ body {
 }
 
 /* Features section */
-.features-list .title {
+.features-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14em;
+  font-size: 14px;
 }
 
-.features-list p {
-  font-size: 14px;
+.features-description {
   line-height: 1.71em;
 }
 /* Team section */
 .team-section {
   background-color: #f5f4fa;
+}
+.team {
+  font-size: 16px;
 }
 
 /* portfolio.html */
@@ -158,15 +164,17 @@ body {
 
 .project-title {
   color: var(--title-color);
-}
-.projects-list h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
 }
 
-.projects-list p {
+.project-description {
   font-size: 16px;
   line-height: 1.88em;
+}
+
+.project-link {
+  color: inherit;
 }
